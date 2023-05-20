@@ -1,0 +1,10 @@
+version: "1.0"
+services:
+  postgres:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_DB: "app"
+      POSTGRES_USER: "olga"
+      POSTGRES_PASSWORD: "123"
+    ports:
+      - "5432:5432"
